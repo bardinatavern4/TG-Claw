@@ -157,3 +157,54 @@
 /mob/living/simple_animal/hostile/handy/sentrybot/Aggro()
 	. = ..()
 	summon_backup(15)
+
+/mob/living/simple_animal/hostile/handy/securitron
+	name = "securitron"
+	desc = "The PDQ-88b securitron (also named the RobCo security model 2060-B) is a private security robot armed with a 10mm gun and laser. Created and mass-produced by House Industries with the help of RobCo Industries."
+	icon = 'icons/fallout/mobs/robots.dmi'
+	icon_state = "Securitron"
+	icon_living = "Securitron"
+	icon_dead = "Securitron_dead"
+	health = 175
+	maxHealth = 175
+	speed = 2
+	melee_damage_lower = 35
+	melee_damage_upper = 48
+	extra_projectiles = 2
+	ranged = TRUE
+	retreat_distance = 3
+	minimum_distance = 3
+	attacktext = "hits"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	projectilesound = 'sound/weapons/gunshot.ogg'
+	projectiletype = /obj/item/projectile/bullet/c9mmr
+	faction = list("wastebot")
+	check_friendly_fire = TRUE
+
+/mob/living/simple_animal/hostile/handy/securitron/Initialize()
+	. = ..()
+	add_overlay("Securitron_e")
+
+/mob/living/simple_animal/hostile/handy/robobrain
+	name = "robobrain"
+	desc = "Robobrains are a pre-war multi-purpose robots. Their memories and programs are stored inside an organic or partially organic brain, contained in a domed shell atop their chassis"
+	icon_state = "robobrain"
+	icon_living = "robobrain"
+	icon_dead = "robobrain-dead"
+	health = 180
+	maxHealth = 180
+	melee_damage_lower = 24
+	melee_damage_upper = 35
+	extra_projectiles = 1 
+	speed = 1
+	ranged = TRUE
+	retreat_distance = 2
+	minimum_distance = 2
+	del_on_death = FALSE
+	attacktext = "whacks"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	projectilesound = 'sound/weapons/laser.ogg'
+	projectiletype = /obj/item/projectile/beam/laser/pistol/weak
+	faction = list("wastebot")
+	check_friendly_fire = TRUE
+

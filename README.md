@@ -1,3 +1,10 @@
+## LiquidClaw13 - Wasteland Warfare 
+Welcome Wastelanders, Legionnaires, NCR, Raiders, Enclave, Brotherhood of Steel and types whom love fallout. **You've arrived at LiquidClaw13 - Wasteland Warfare**
+
+*What is LiquidClaw13 Swigs???*
+
+Well let me tell you mate: 
+LiquidClaw13 - Wasteland Warfare is a Fallout 13 SS13 server hosted on Byond by Sips and Me, Swigs. Due to the death of other fun F13 servers, this was the only reasonable course of action for people who love the good old classic fallout 13. We're continuing the legacy of glorious Fallout 13 in our own Liquid way, so come contribute and take a look at what you can add to LiquidClaw13, join the discord to see what we've done, what were up to and what everyone is doing (but you've already done that), give us any tips or got anything that could/can help, dont be shy and give it a try. Sick of the ERP Fiends? Sick of certain faggot flowers of the RED Variety? Starting with the Letter R, in a place they could not possibly grow? Do you miss good old fallout? Do you just wanna kill a bastard legionary or a profligate bear? Do you wanna start a business in the wasteland? Become a Raider or Criminal? Start a Gang of Raiders AND Criminals? Go hunting for advanced tech as the Brotherhood of Steel? You wanna go places around the wastelands, that's right not just one, but many wastelands! Very soon! Do you want to have fun? Want to a go to server where the Host's ARENT retarded and the staff ARENT Snowflakes, Cucks or Powertrippers who use they god-given abilities to cheat? You want a place run by people who know what its like to be a player and make a server by players for players. But also makes the enviroment fun for STAFF and PLAYERS? epic i know right. You want a freeform server? But something also with some structure. You want sensible rules? And do you just want to have a fun time in your spare time, or in your free time or in and at any time?!?!? Then come on down to LiquidClaw13. Coming to a Wasteland near you!
 ## F13 codebase 
 
 [![Build Status](https://travis-ci.org/BadDeathclaw/TG-Claw.svg?branch=master)](https://travis-ci.org/BadDeathclaw/TG-Claw) [![Krihelimeter](https://www.krihelinator.xyz/badge/BadDeathclaw/TG-Claw)](http://www.krihelinator.xyz/repositories/BadDeathclaw/TG-Claw) 
@@ -5,7 +12,7 @@
 [![Percentage of issues still open](https://isitmaintained.com/badge/open/BadDeathclaw/TG-Claw.svg)](https://isitmaintained.com/project/BadDeathclaw/TG-Claw "Percentage of issues still open") [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/BadDeathclaw/TG-Claw.svg)](https://isitmaintained.com/project/BadDeathclaw/TG-Claw "Average time to resolve an issue")  
 [![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://forthebadge.com) [![worksonmymachine](https://img.shields.io/badge/works--on-_my--machine-yellowgreen.svg?longCache=true&style=for-the-badge)](https://shields.io) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
-**Discord** https://discord.gg/TCj5cJN
+**Discord** https://discord.gg/QVJCPE5
 
 ## Notes from F13
 

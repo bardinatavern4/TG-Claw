@@ -160,6 +160,18 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 
+/obj/item/gun/energy/laser/rcw
+	name = "Laser RCW"
+	desc = "The unique feature of this laser assault rifle that not only gives the weapon its name, but also its unique look and high rate of fire for a laser rifle is the addition of a drum. "
+	icon_state = "laser-rcw"
+	item_state = "rcw"
+	burst_size = 3
+	fire_delay = 1
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw)
+	cell_type = /obj/item/stock_parts/cell/ammo/ecp
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+
 /obj/item/gun/energy/laser/pistol
 	name = "AEP7 laser pistol"
 	desc = "A basic energy-based laser gun that fires concentrated beams of light."
@@ -171,9 +183,34 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	slot_flags = ITEM_SLOT_BELT
 
+/obj/item/gun/energy/laser/wattz1000
+	name = "Wattz 1000 laser pistol"
+	desc = "A Wattz 1000 laser pistol. As the pistol is a civilian model, the wattage is lower than military or police versions."
+	icon_state = "wattz1000"
+	item_state = "wattz"
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_LIGHT
+	fire_delay = 1
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/wattz1000)
+	cell_type = /obj/item/stock_parts/cell/ammo/ec
+	slot_flags = ITEM_SLOT_BELT
+
+/obj/item/gun/energy/laser/wattzmagneto
+	name = "Wattz 1000 magneto-laser pistol"
+	desc = "This Wattz 1000 laser pistol has been upgraded with a magnetic field targeting system that tightens the laser emission, giving this pistol extra penetrating power."
+	icon_state = "magnetowattz"
+	item_state = "wattz"
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_LIGHT
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/wattzmagneto)
+	cell_type = /obj/item/stock_parts/cell/ammo/ec
+	slot_flags = ITEM_SLOT_BELT
+
+
 /obj/item/gun/energy/laser/scatter
 	name = "tribeam laser rifle"
 	desc = "A modified AER9 equipped with a refraction kit that spreads its bolts. It is usually only given to high-ranking soldiers within the Brotherhood, due to it's level of technology, as well as its reputation of friendly fire."
+	icon_state = "tribeam"
 	item_state = "laser-rifle9"
 	fire_delay = 3
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter)
@@ -212,3 +249,15 @@
 	weapon_weight = WEAPON_LIGHT
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	slot_flags = ITEM_SLOT_BELT
+
+/obj/item/gun/energy/laser/plasma/defender
+	name ="plasma defender"
+	item_state = "defender"
+	icon_state = "defender"
+	desc = "The Austrian-made Glock 86 plasma pistol (also referred to as the Plasma Defender). The Plasma Defender is a powerful energy-based pistol which fires superheated bolts of green plasma."
+	ammo_type = list(/obj/item/ammo_casing/energy/plasma/defender)
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_LIGHT
+	cell_type = /obj/item/stock_parts/cell/ammo/ec
+	slot_flags = ITEM_SLOT_BELT
+

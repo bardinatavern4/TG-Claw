@@ -1,14 +1,40 @@
 /datum/crafting_recipe/metalarmor
 	name = "metal armor"
-	result = /obj/item/clothing/suit/armor/fluff/chestplate
+	result = /obj/item/clothing/suit/armor/f13/bmetalarmor
 	reqs = list(/obj/item/stack/sheet/leather = 1,
 				/obj/item/stack/sheet/durathread = 5,
 				/obj/item/stack/crafting/metalparts = 5)
 	tools = list(TOOL_SWORKBENCH)
 	time = 120
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
 
+/datum/crafting_recipe/metalarmor_reinforced
+	name = "reinforced metal armor"
+	result = /obj/item/clothing/suit/armor/f13/bmetalarmor/reinforced
+	reqs = list(/obj/item/clothing/suit/armor/f13/bmetalarmor = 1,
+				/obj/item/stack/sheet/metal = 6,
+				/obj/item/stack/crafting/metalparts = 6,
+				/obj/item/stack/crafting/goodparts = 2)
+	tools = list(TOOL_AWORKBENCH,
+				TOOL_WELDER)
+	time = 200
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
+
+/datum/crafting_recipe/metalarmor_light
+	name = "light metal armor"
+	result = /obj/item/clothing/suit/armor/f13/bmetalarmor/light
+	reqs = list(/obj/item/clothing/suit/armor/f13/bmetalarmor = 1,
+				/obj/item/stack/sheet/metal = 3,
+				/obj/item/stack/sheet/leather = 5,
+				/obj/item/stack/crafting/metalparts = 1)
+	tools = list(TOOL_SWORKBENCH,
+				TOOL_WIRECUTTER)
+	time = 120
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
+/*
 /datum/crafting_recipe/metalarmormk2
 	name = "metal armor mark 2"
 	result = /obj/item/clothing/suit/armor/fluff/chestplate/mk2
@@ -18,8 +44,8 @@
 	tools = list(TOOL_SWORKBENCH)
 	time = 120
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
-
+	subcategory = CAT_ARMOUR
+*/
 /datum/crafting_recipe/metalmask
 	name = "metal mask"
 	result = /obj/item/clothing/head/helmet/f13/metalmask
@@ -29,7 +55,7 @@
 	tools = list(TOOL_SWORKBENCH)
 	time = 60
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
 
 /datum/crafting_recipe/metalmaskmk2
 	name = "metal mask mk2"
@@ -39,7 +65,7 @@
 	tools = list(TOOL_SWORKBENCH)
 	time = 60
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
 
 /datum/crafting_recipe/leatherarmor
 	name = "leather armor"
@@ -49,7 +75,30 @@
 	tools = list(TOOL_BWORKBENCH)
 	time = 60
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
+
+/datum/crafting_recipe/leatherarmor_reinforced
+	name = "reinforced leather armour"
+	result = /obj/item/clothing/suit/armor/f13/leatherarmor/reinforced
+	reqs = list(/obj/item/clothing/suit/armor/f13/leatherarmor = 1,
+				/obj/item/stack/sheet/leather = 3,
+				/obj/item/stack/sheet/metal = 2,
+				/obj/item/stack/crafting/metalparts = 1)
+	tools = list(TOOL_SWORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
+
+/datum/crafting_recipe/leatherarmor_light
+	name = "light leather armour"
+	result = /obj/item/clothing/suit/armor/f13/leatherarmor/light
+	reqs = list(/obj/item/clothing/suit/armor/f13/leatherarmor = 1,
+				/obj/item/stack/sheet/leather = 5)
+	tools = list(TOOL_SWORKBENCH,
+				 TOOL_WIRECUTTER)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
 
 /datum/crafting_recipe/armorkit
 	name = "armor kit"
@@ -60,7 +109,7 @@
 	tools = list(TOOL_BWORKBENCH)
 	time = 60
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
 /*
 /datum/crafting_recipe/durathread_vest
 	name = "Makeshift Vest"
@@ -69,7 +118,7 @@
 				/obj/item/stack/sheet/leather = 4)
 	time = 50
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
 
 /datum/crafting_recipe/durathread_helmet
 	name = "Makeshift Helmet"
@@ -78,8 +127,8 @@
 				/obj/item/stack/sheet/leather = 5)
 	time = 40
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
-
+	subcategory = CAT_ARMOUR
+*/
 /datum/crafting_recipe/fannypack
 	name = "Fannypack"
 	result = /obj/item/storage/belt/fannypack
@@ -87,7 +136,7 @@
 				/obj/item/stack/sheet/leather = 1)
 	time = 20
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_BELTS
 
 	/datum/crafting_recipe/bandolier
 	name = "Bandolier"
@@ -159,7 +208,6 @@
 	reqs = list(/obj/item/clothing/glasses/sunglasses/reagent = 1)
 	category = CAT_CLOTHING
 	subcategory = CAT_CLOTHING
-*/
 
 /datum/crafting_recipe/ghostsheet
 	name = "Ghost Sheet"
@@ -169,8 +217,9 @@
 	reqs = list(/obj/item/bedsheet = 1)
 	category = CAT_CLOTHING
 	subcategory = CAT_CLOTHING
-
+*/
 //f13 additions
+/*
 /datum/crafting_recipe/metalarmor
 	name = "metal armor"
 	result = /obj/item/clothing/suit/armor/f13/bmetalarmor
@@ -180,7 +229,7 @@
 	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
 	time = 120
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
 
 
 /datum/crafting_recipe/Imetalarmor
@@ -193,7 +242,7 @@
 	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
 	time = 120
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
 
 /datum/crafting_recipe/IImetalarmor
 	name = "upgrading metal armor"
@@ -204,13 +253,40 @@
 	tools = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
 	time = 120
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
+	subcategory = CAT_ARMOUR
+*/
+
+/datum/crafting_recipe/wanderer
+	name = "Wanderer's Jacket"
+	result = /obj/item/clothing/suit/toggle/labcoat/f13/wanderer
+	reqs = list(/obj/item/stack/sheet/leather = 2,
+				/obj/item/stack/sheet/cloth = 3)
+	time = 20
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
 
 /datum/crafting_recipe/settler
 	name = "Settler Outfit"
 	result = /obj/item/clothing/under/f13/settler
-	reqs = list(/obj/item/stack/sheet/leather = 1,
+	reqs = list(/obj/item/stack/sheet/cloth = 4)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/doctorm
+	name = "Doctor's Fatigues"
+	result = /obj/item/clothing/under/f13/doctorm
+	reqs = list(/obj/item/stack/sheet/leather = 2,
 				/obj/item/stack/sheet/cloth = 3)
+	time = 15
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/brahmin
+	name = "Brahmin-skin Outfit"
+	result = /obj/item/clothing/under/f13/brahmin
+	reqs = list(/obj/item/stack/sheet/leather = 4,
+				/obj/item/stack/sheet/cloth = 1)
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
@@ -286,7 +362,7 @@
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_BELTS
-
+/*
 /datum/crafting_recipe/chestrig
 	name = "Chest Rig"
 	result = /obj/item/storage/belt/military
@@ -304,11 +380,11 @@
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_BELTS
-
+*/
 /datum/crafting_recipe/shoulderholster
 	name = "Shoulder Holster"
 	result = /obj/item/storage/belt/holster
-	reqs = list(/obj/item/stack/sheet/leather = 2,
+	reqs = list(/obj/item/stack/sheet/leather = 3,
 				/obj/item/stack/sheet/hay = 3)
 	time = 15
 	category = CAT_CLOTHING
@@ -348,5 +424,4 @@
 				/obj/item/stack/sheet/hay = 3)
 	time = 10
 	category = CAT_CLOTHING
-	subcategory = CAT_CLOTHING
-*/
+	subcategory = CAT_ARMOUR

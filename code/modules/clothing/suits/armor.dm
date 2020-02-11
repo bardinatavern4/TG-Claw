@@ -303,7 +303,7 @@
 	icon_state = "supafly"
 	item_state = "supafly"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 16, "bio" = 25, "rad" = 5, "fire" = 50, "acid" = 10)
 	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/raider/sadist
@@ -318,7 +318,7 @@
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	flash_protect = 2
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 25, "bio" = 20, "rad" = 0, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/raider/yankee
 	name = "yankee raider armor"
@@ -326,7 +326,7 @@
 	icon_state = "yankee"
 	item_state = "yankee"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 50, "acid" = 0)
 	strip_delay = 40
 
 /obj/item/clothing/suit/armor/f13/badlands
@@ -342,7 +342,7 @@
 	icon_state = "painspike"
 	item_state = "painspike"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
+	armor = list("melee" = 45, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 16, "bio" = 20, "rad" = 0, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/leatherarmor
 	name = "leather armor"
@@ -350,28 +350,56 @@
 	icon_state = "leatherarmor"
 	item_state = "leatherarmor"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 35, "bullet" = 15, "laser" = 30, "energy" = 20, "bomb" = 0, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	armor = list("melee" = 35, "bullet" = 15, "laser" = 40, "energy" = 30, "bomb" = 0, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
 	flags_inv = HIDEJUMPSUIT
 	strip_delay = 40
 
-/obj/item/clothing/suit/armor/f13/chitinarmor
-	name = "insect chitin armor"
-	desc = "A set of light armor made of insect chitin.<br> Tough and light, it provides some moderate protection from trauma while allowing the user to remain mobile and protected from the elements."
-	icon_state = "insect_armor"
-	item_state = "insect_armor"
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 55, "bullet" = 30, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
-	flags_inv = HIDEJUMPSUIT
-	strip_delay = 40
+/obj/item/clothing/suit/armor/f13/leatherarmor/reinforced
+	name = "reinforced leather armor"
+	desc = "A set of armor made from brahmin leather, reinforced with both extra leather and some metal plating."
+	icon_state = "leatherarmor_reinforced"
+	item_state = "leatherarmor_reinforced"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	armor = list("melee" = 45, "bullet" = 30, "laser" = 30, "energy" = 25, "bomb" = 10, "bio" = 50, "rad" = 20, "fire" = 85, "acid" = 20)
+	strip_delay = 45
+
+/obj/item/clothing/suit/armor/f13/leatherarmor/light
+	name = "light leather armor"
+	desc = "A set of even lighter armor made from brahmin leather. The leg and arm pieces have been cut away and the rest of the armour has been reinforced with extra leather. <br> Looks more like a vest now."
+	icon_state = "leatherarmor_light"
+	item_state = "leatherarmor_light"
+	body_parts_covered = CHEST|GROIN|ARMS
+	armor = list("melee" = 25, "bullet" = 10, "laser" = 55, "energy" = 40, "bomb" = 0, "bio" = 45, "rad" = 10, "fire" = 70, "acid" = 0)
+	flags_inv = NONE
+	strip_delay = 25
 
 /obj/item/clothing/suit/armor/f13/bmetalarmor
 	name = "metal armor"
 	desc = "A set of sturdy metal armor made from various bits of scrap metal. It looks heavy and impairs movement"
-	icon_state = "bmetalarmor"
-	item_state = "bmetalarmor"
+	icon_state = "metalarmor"
+	item_state = "metalarmor"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 90, "acid" = 0)
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 65, "acid" = 0)
 	slowdown = 0.75
+	strip_delay = 60
+
+/obj/item/clothing/suit/armor/f13/bmetalarmor/reinforced
+	name = "reinforced metal armor"
+	desc = "A set of even sturdier metal armor made from various bits of scrap metal. Extra pieces have been welded on and affixed using leather."
+	icon_state = "metalarmor_reinforced"
+	item_state = "metalarmor_reinforced"
+	armor = list("melee" = 75, "bullet" = 55, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 45, "rad" = 40, "fire" = 80, "acid" = 15)
+	slowdown = 1.10
+	strip_delay = 150
+	item_flags = SLOWS_WHILE_IN_HAND
+
+/obj/item/clothing/suit/armor/f13/bmetalarmor/light
+	name = "light metal armor"
+	desc = "A set of sturdy metal armor with the legs and arms cut off from the chest piece, leaving the armor much lighter."
+	icon_state = "metalarmor_light"
+	item_state = "metalarmor_light"
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 45, "energy" = 35, "bomb" = 20, "bio" = 40, "rad" = 25, "fire" = 50, "acid" = 0)
+	slowdown = 0.40
 	strip_delay = 60
 
 /obj/item/clothing/suit/armor/f13/kit/terrible
@@ -707,14 +735,6 @@
 	item_state = "scout_armor_lt"
 	desc = "A specialized variant of combat armor issued to officers of the 3rd Scout Battalion."
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
-
-/obj/item/clothing/suit/armor/f13/ghostechoe
-	name = "tattered peace coat"
-	desc = "An old coat belonging to a Desert Ranger once. It has been stripped of most useful protection, and has seen better days. A crude peace symbol has been painted on the back in white."
-	icon_state = "ghostechoe"
-	item_state = "ghostechoe"
-	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 10, "bullet" = 16, "laser" = 0, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/headscribe
     name = "brotherhood head scribe robe"

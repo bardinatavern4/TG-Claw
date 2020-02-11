@@ -620,16 +620,6 @@
 	category = CAT_PRIMAL
 	subcategory = CAT_TRIBAL
 
-/datum/crafting_recipe/chitinarmor
-	name = "Insect Chitin Armor"
-	result = /obj/item/clothing/suit/armor/f13/chitinarmor
-	time = 30
-	reqs = list(/obj/item/stack/sheet/animalhide/chitin = 12,
-				/obj/item/stack/sheet/sinew = 4,
-				/obj/item/stack/sheet/cloth = 4)
-	category = CAT_PRIMAL
-	subcategory = CAT_TRIBAL
-
 /datum/crafting_recipe/bonetalisman
 	name = "Bone Talisman"
 	result = /obj/item/clothing/accessory/talisman
@@ -699,7 +689,7 @@
 				/obj/item/stack/sheet/bone = 2)
 	category = CAT_PRIMAL
 	subcategory = CAT_TRIBAL
-*/ 
+*/
 /datum/crafting_recipe/boneaxe
 	name = "Bone Axe"
 	result = /obj/item/twohanded/fireaxe/boneaxe
@@ -878,6 +868,22 @@
 				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
 				/obj/item/reagent_containers/food/snacks/grown/fungus = 1)
 	time = 80
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/antivenom
+	name = "Antivenom"
+	result = /obj/item/reagent_containers/glass/bottle/antivenom
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 1 )
+	time = 50
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/hydra
+	name = "Hydra"
+	result = /obj/item/reagent_containers/hypospray/medipen/hydra
+	reqs = list(/obj/item/reagent_containers/glass/bottle/antivenom = 1,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 1 )
+	time = 70
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/stimpak
@@ -1081,7 +1087,7 @@
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_ARMOUR
 
 /datum/crafting_recipe/salvagedpaconversion2
 	name = "Salvaged Power Armor"
@@ -1090,7 +1096,7 @@
 				/obj/item/toy/crayon/spraycan)
 	time = 30
 	category = CAT_CLOTHING
-	subcategory = CAT_WASTELAND
+	subcategory = CAT_ARMOUR
 
 /datum/crafting_recipe/suppressor
 	name = "Suppressor"
