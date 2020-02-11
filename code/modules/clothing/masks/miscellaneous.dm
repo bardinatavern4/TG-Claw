@@ -255,6 +255,8 @@
 /obj/item/clothing/mask/bandana/attack_self(mob/user)
 	adjustmask(user)
 
+
+
 /obj/item/clothing/mask/bandana/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/wirecutters) || I.is_sharp())
 		var/obj/item/stack/sheet/cloth/C = new (get_turf(src), 2)
@@ -289,6 +291,11 @@
 	name = "black bandana"
 	desc = "A fine black bandana with nanotech lining."
 	icon_state = "bandblack"
+
+/obj/item/clothing/mask/bandana/white
+	name = "bandana"
+	desc = "A fine bandana with nanotech lining."
+	icon_state = "bandwhite"
 
 /obj/item/clothing/mask/bandana/skull
 	name = "skull bandana"
@@ -365,3 +372,15 @@
 	icon_state = "scarecrow_sack"
 	item_state = "scarecrow_sack"
 	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+
+//Desert facewrap
+
+/obj/item/clothing/mask/facewrap
+	name = "desert facewrap"
+	desc = "A facewrap to help shield the face from sand and other dirt."
+	icon_state = "facewrap"
+	item_state = "facewrap"
+	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	flags_cover = MASKCOVERSMOUTH
+	visor_flags_inv = HIDEFACE
+	visor_flags_cover = MASKCOVERSMOUTH

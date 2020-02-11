@@ -1,3 +1,67 @@
+/datum/crafting_recipe/metalarmor
+	name = "metal armor"
+	result = /obj/item/clothing/suit/armor/fluff/chestplate
+	reqs = list(/obj/item/stack/sheet/leather = 1,
+				/obj/item/stack/sheet/durathread = 5,
+				/obj/item/stack/crafting/metalparts = 5)
+	tools = list(TOOL_SWORKBENCH)
+	time = 120
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
+/datum/crafting_recipe/metalarmormk2
+	name = "metal armor mark 2"
+	result = /obj/item/clothing/suit/armor/fluff/chestplate/mk2
+	reqs = list(/obj/item/clothing/suit/armor/fluff/chestplate = 1,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/crafting/metalparts = 3)
+	tools = list(TOOL_SWORKBENCH)
+	time = 120
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
+/datum/crafting_recipe/metalmask
+	name = "metal mask"
+	result = /obj/item/clothing/head/helmet/f13/metalmask
+	reqs = list(/obj/item/stack/sheet/leather = 1,
+				/obj/item/stack/sheet/durathread = 1,
+				/obj/item/stack/crafting/metalparts = 2)
+	tools = list(TOOL_SWORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
+/datum/crafting_recipe/metalmaskmk2
+	name = "metal mask mk2"
+	result = /obj/item/clothing/head/helmet/f13/metalmask/mk2
+	reqs = list(/obj/item/clothing/head/helmet/f13/metalmask = 1,
+				/obj/item/stack/crafting/goodparts = 2)
+	tools = list(TOOL_SWORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
+/datum/crafting_recipe/leatherarmor
+	name = "leather armor"
+	result = /obj/item/clothing/suit/armor/f13/leatherarmor
+	reqs = list(/obj/item/stack/sheet/leather = 3,
+				/obj/item/stack/sheet/durathread = 2)
+	tools = list(TOOL_BWORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+
+/datum/crafting_recipe/armorkit
+	name = "armor kit"
+	result = /obj/item/clothing/suit/armor/f13/kit
+	reqs = list(/obj/item/stack/sheet/leather = 3,
+				/obj/item/stack/sheet/durathread = 1,
+				/obj/item/stack/crafting/metalparts = 1)
+	tools = list(TOOL_BWORKBENCH)
+	time = 60
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+/*
 /datum/crafting_recipe/durathread_vest
 	name = "Makeshift Vest"
 	result = /obj/item/clothing/suit/armor/vest/durathread
@@ -249,3 +313,40 @@
 	time = 15
 	category = CAT_CLOTHING
 	subcategory = CAT_BELTS
+
+/datum/crafting_recipe/maletribal
+	name = "Male Tribal Outfit"
+	result = /obj/item/clothing/under/f13/tribal
+	reqs = list(/obj/item/stack/sheet/cloth = 3)
+	time = 10
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/femaletribal
+	name = "Female Tribal Outfit"
+	result = /obj/item/clothing/under/f13/female/tribal
+	reqs = list(/obj/item/stack/sheet/cloth = 3)
+	time = 10
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/facewrap
+	name = "Desert Facewrap"
+	result = /obj/item/clothing/mask/facewrap
+	reqs = list(/obj/item/stack/sheet/cloth = 2)
+	time = 10
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+//Tribal armors
+
+/datum/crafting_recipe/tribalgeckoarmor
+	name = "Gecko Armor"
+	result = /obj/item/clothing/suit/armor/f13/tribal
+	reqs = list(/obj/item/stack/sheet/animalhide/geckohide = 2,
+				/obj/item/stack/sheet/cloth = 2,
+				/obj/item/stack/sheet/hay = 3)
+	time = 10
+	category = CAT_CLOTHING
+	subcategory = CAT_CLOTHING
+*/
